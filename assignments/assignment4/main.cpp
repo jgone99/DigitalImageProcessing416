@@ -46,10 +46,10 @@ void problem_1()
 
 	const int grad[2]{ -1, 1 };
 
-	std::ifstream image1("../data/lena.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/lena_derivX.raw", std::ios::binary | std::ios::out);
-	std::ofstream image3("../result/lena_derivY.raw", std::ios::binary | std::ios::out);
-	std::ofstream image4("../result/lena_gradient.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/lena.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/lena_derivX.raw", std::ios::binary | std::ios::out);
+	std::ofstream image3("../../result/lena_derivY.raw", std::ios::binary | std::ios::out);
+	std::ofstream image4("../../result/lena_gradient.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open() || !image3.is_open() || !image4.is_open())
 	{
@@ -100,9 +100,9 @@ void problem_2()
 	int** template_matrix = new int* [image2_height];
 	int** matched_matrix = new int* [image1_height];
 
-	std::ifstream image1("../data/flowers.raw", std::ios::binary | std::ios::in);
-	std::ifstream image2("../data/flowers-template.raw", std::ios::binary | std::ios::out);
-	std::ofstream image3("../result/flowers_squared_diff.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/flowers.raw", std::ios::binary | std::ios::in);
+	std::ifstream image2("../../data/flowers-template.raw", std::ios::binary | std::ios::out);
+	std::ofstream image3("../../result/flowers_squared_diff.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open() || !image3.is_open())
 	{
@@ -142,9 +142,9 @@ void problem_3()
 	int** template_matrix = new int* [image2_height];
 	int** matched_matrix = new int* [image1_height];
 
-	std::ifstream image1("../data/flowers.raw", std::ios::binary | std::ios::in);
-	std::ifstream image2("../data/flowers-template.raw", std::ios::binary | std::ios::out);
-	std::ofstream image3("../result/flowers_correlation_coeff.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/flowers.raw", std::ios::binary | std::ios::in);
+	std::ifstream image2("../../data/flowers-template.raw", std::ios::binary | std::ios::out);
+	std::ofstream image3("../../result/flowers_correlation_coeff.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open() || !image3.is_open())
 	{

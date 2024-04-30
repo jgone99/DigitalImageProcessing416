@@ -29,9 +29,9 @@ void problem_1()
 	const int image_width = 512, image_height = 512;
 	const int pixel_bitsize = 8;
 
-	ifstream image1("../data/WashingtonDC-ver1.raw", ios::binary | ios::in);
-	ifstream image2("../data/WashingtonDC-ver2.raw", ios::binary | ios::in);
-	ofstream image3("../result/WashingtonDC-subtract.raw", ios::binary | ios::out);
+	ifstream image1("../../data/WashingtonDC-ver1.raw", ios::binary | ios::in);
+	ifstream image2("../../data/WashingtonDC-ver2.raw", ios::binary | ios::in);
+	ofstream image3("../../result/WashingtonDC-subtract.raw", ios::binary | ios::out);
 
 	if (!image1.is_open() || !image2.is_open() || !image3.is_open())
 	{
@@ -67,8 +67,8 @@ void problem_2()
 	const int image_width = 512, image_height = 512;
 	const int pixel_bitsize = 8;
 
-	ifstream image1("../data/lena.raw", ios::binary | ios::in);
-	ofstream image2("../result/lena_negative.raw", ios::binary | ios::out);
+	ifstream image1("../../data/lena.raw", ios::binary | ios::in);
+	ofstream image2("../../result/lena_negative.raw", ios::binary | ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{
@@ -101,8 +101,8 @@ void problem_3()
 	const int image_width = 512, image_height = 512;
 	const int pixel_bitsize = 8;
 
-	ifstream image1("../data/lena.raw", ios::binary | ios::in);
-	ofstream image2("../result/lena_translation.raw", ios::binary | ios::out);
+	ifstream image1("../../data/lena.raw", ios::binary | ios::in);
+	ofstream image2("../../result/lena_translation.raw", ios::binary | ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{
@@ -138,8 +138,8 @@ void problem_4()
 	const int image_width = 500, image_height = 500;
 	const int pixel_bitsize = 8;
 
-	ifstream image1("../data/pollen.raw", ios::binary | ios::in);
-	ofstream image2("../result/pollen_intensity_slicing.raw", ios::binary | ios::out);
+	ifstream image1("../../data/pollen.raw", ios::binary | ios::in);
+	ofstream image2("../../result/pollen_intensity_slicing.raw", ios::binary | ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{
@@ -169,8 +169,8 @@ void normalize()
 	const int image_width = 512, image_height = 512;
 	const int pixel_bitsize = 8;
 
-	ifstream image1("../data/lena.raw", ios::binary | ios::in);
-	ofstream image2("../result/lena_normal.raw", ios::binary | ios::out);
+	ifstream image1("../../data/lena.raw", ios::binary | ios::in);
+	ofstream image2("../../result/lena_normal.raw", ios::binary | ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{

@@ -31,8 +31,8 @@ void problem_1()
 	int** matrix = new int* [image_height];
 	int** filtered_matrix = new int* [image_height];
 
-	std::ifstream image1("../data/lenna-noise.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/lena-gaussian.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/lenna-noise.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/lena-gaussian.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{
@@ -68,8 +68,8 @@ void problem_2()
 	const int kernel_size = 3;
 	int** kernel = new int* [kernel_size];
 
-	std::ifstream image1("../data/lena.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/lena-sharpen.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/lena.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/lena-sharpen.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{
@@ -106,8 +106,8 @@ void problem_3()
 	int** filtered_matrix = new int* [image_height];
 	const int kernel_size = 3;
 
-	std::ifstream image1("../data/lenna-noise.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/lena-median.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/lenna-noise.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/lena-median.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{

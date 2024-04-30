@@ -42,8 +42,8 @@ void problem_1()
 		new int[3]{1, 1, 1}
 	};
 
-	std::ifstream image1("../data/lincoln.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/lincoln_boundary.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/lincoln.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/lincoln_boundary.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{
@@ -90,9 +90,9 @@ void problem_2()
 			new int[3] {1, 1, 1}
 		};
 
-	std::ifstream image1("../data/fingerprint.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/fingerprint_opening.raw", std::ios::binary | std::ios::out);
-	std::ofstream image3("../result/fingerprint_closing.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/fingerprint.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/fingerprint_opening.raw", std::ios::binary | std::ios::out);
+	std::ofstream image3("../../result/fingerprint_closing.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open() || !image3.is_open())
 	{
@@ -141,8 +141,8 @@ void problem_3()
 	int** co_occurrence_matrix = new int* [intensity_range];
 	int offset[2]{ 1, 0 };
 
-	std::ifstream image1("../data/cktboard.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/cktboard_texture.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/cktboard.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/cktboard_texture.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{

@@ -29,8 +29,8 @@ void problem_1()
 	int freq[intensity_range] = {};
 	int freq_map[intensity_range] = {};
 
-	std::ifstream image1("../data/lena.raw", std::ios::binary | std::ios::in);
-	std::ofstream image2("../result/lena_histequal.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/lena.raw", std::ios::binary | std::ios::in);
+	std::ofstream image2("../../result/lena_histequal.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open())
 	{
@@ -67,9 +67,9 @@ void problem_2()
 	int freq2[intensity_range] = {};
 	int freq_map[intensity_range] = {};
 
-	std::ifstream image1("../data/lena.raw", std::ios::binary | std::ios::in);
-	std::ifstream image2("../result/lena_histequal.raw", std::ios::binary | std::ios::in);
-	std::ofstream image3("../result/lena_histspec.raw", std::ios::binary | std::ios::out);
+	std::ifstream image1("../../data/lena.raw", std::ios::binary | std::ios::in);
+	std::ifstream image2("../../result/lena_histequal.raw", std::ios::binary | std::ios::in);
+	std::ofstream image3("../../result/lena_histspec.raw", std::ios::binary | std::ios::out);
 
 	if (!image1.is_open() || !image2.is_open() || !image3.is_open())
 	{
